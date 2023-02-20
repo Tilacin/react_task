@@ -1,10 +1,12 @@
 import CostItem from "./CostItem";
 import './Costs.css'
 import Card from "../UI/Card";
+import CostsFilter from "./CostsFilter";
 
 function Costs (props) {
     return(
-    
+    <div>
+      <CostsFilter/>
     <Card className="costs">
     <CostItem
       date={props.costs[0].date}
@@ -22,7 +24,7 @@ function Costs (props) {
       amount={props.costs[2].amount}
     />
     </Card>
-  
+    </div>
     )
 }
 

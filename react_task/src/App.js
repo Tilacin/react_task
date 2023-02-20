@@ -30,6 +30,7 @@ const addCostHandler = (cost) => {
 
 return (
   <div>
+   
     <NewCost onAddCost={addCostHandler} />
   <Costs costs={costs}/>
   </div>
